@@ -7,3 +7,4 @@ More details https://adventofcode.com/
 ## Solved puzzles
 1. Elves that carry most calories
 2. Rock Paper Scissors tournament
+3. Priority of items carried by elves
