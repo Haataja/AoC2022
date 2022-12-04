@@ -5,6 +5,7 @@ I use Kotlin to strengthen my skill on that.
 More details https://adventofcode.com/
 
 ## Solved puzzles
-1. Elves that carry most calories
+1. Calorie Counting
 2. Rock Paper Scissors tournament
-3. Priority of items carried by elves
+3. Rucksack Reorganization
+4. Camp Cleanup
