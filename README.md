@@ -9,3 +9,5 @@ More details https://adventofcode.com/
 2. Rock Paper Scissors tournament
 3. Rucksack Reorganization
 4. Camp Cleanup
+5. Supply Stacks
+6. Tuning Trouble
