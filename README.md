@@ -1,6 +1,8 @@
 # aoc2022
 My attempt to participate advent-of-code, let's see how long I get.
-I use Kotlin to strengthen my skill on that. 
+I use Kotlin to strengthen my skill on that.
+
+My solutions might be little brute forced, but little bit brute force never hurt anyone, right.
 
 More details https://adventofcode.com/
 
@@ -11,3 +13,6 @@ More details https://adventofcode.com/
 4. Camp Cleanup
 5. Supply Stacks
 6. Tuning Trouble
+7. No Space Left On Device 
+8. Treetop Tree House
+
