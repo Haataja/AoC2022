@@ -1,3 +1,5 @@
+# Advent of code 
+
 # aoc2022
 My attempt to participate advent-of-code, let's see how long I get.
 I use Kotlin to strengthen my skill on that.
@@ -21,3 +23,6 @@ More details https://adventofcode.com/
 12. Hill Climbing Algorithm
 13. Distress Signal
 
+# aoc2023
+Added advent of code 2023 to the same project  
+Intent to update Java version
