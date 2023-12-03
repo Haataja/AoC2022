@@ -4,7 +4,7 @@
 My attempt to participate advent-of-code, let's see how long I get.
 I use Kotlin to strengthen my skill on that.
 
-My solutions might be little brute forced, but little bit brute force never hurt anyone, right.
+My solutions might be little brute forced, but little brute force never hurt anyone, right.
 
 More details https://adventofcode.com/
 
@@ -25,4 +25,7 @@ More details https://adventofcode.com/
 
 # aoc2023
 Added advent of code 2023 to the same project  
-
+## Solved puzzles
+1. Trebuchet?!
+2. Cube Conundrum
+3. Gear Ratios
