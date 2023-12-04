@@ -29,3 +29,4 @@ Added advent of code 2023 to the same project
 1. Trebuchet?!
 2. Cube Conundrum
 3. Gear Ratios
+4. Scratchcards
