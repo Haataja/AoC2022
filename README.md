@@ -30,3 +30,4 @@ Added advent of code 2023 to the same project
 2. Cube Conundrum
 3. Gear Ratios
 4. Scratchcards
+5. If You Give A Seed A Fertilizer
