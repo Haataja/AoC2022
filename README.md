@@ -32,3 +32,4 @@ Added advent of code 2023 to the same project
 4. Scratchcards
 5. If You Give A Seed A Fertilizer
 6. Wait For It
+7. Camel Cards
