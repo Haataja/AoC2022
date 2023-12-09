@@ -34,3 +34,4 @@ Added advent of code 2023 to the same project
 6. Wait For It
 7. Camel Cards
 8. Haunted Wasteland
+9. Mirage Maintenance
