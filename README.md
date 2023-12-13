@@ -36,3 +36,6 @@ Added advent of code 2023 to the same project
 8. Haunted Wasteland
 9. Mirage Maintenance
 10. Pipe Maze
+11. Cosmic Expansion
+12. Hot Springs (part 1)
+13. Point of Incidence
