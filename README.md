@@ -37,5 +37,5 @@ Added advent of code 2023 to the same project
 9. Mirage Maintenance
 10. Pipe Maze
 11. Cosmic Expansion
-12. Hot Springs (part 1)
+12. Hot Springs (part 2 with help)
 13. Point of Incidence
