@@ -46,6 +46,7 @@ fun main() {
         withoutRollingStones: MutableList<MutableList<Char>>
     ): MutableList<Pair<Int, Int>>{
         val newStones = mutableListOf<Pair<Int, Int>>()
+        stones.sortBy { it.first }
         for (stone in stones) {
             var canMove = true
             var currentPlace = stone
@@ -68,6 +69,7 @@ fun main() {
         withoutRollingStones: MutableList<MutableList<Char>>
     ) : MutableList<Pair<Int, Int>> {
         val newStones = mutableListOf<Pair<Int, Int>>()
+        stones.sortBy { -it.first }
         for (stone in stones) {
             var canMove = true
             var currentPlace = stone
@@ -91,6 +93,7 @@ fun main() {
         withoutRollingStones: MutableList<MutableList<Char>>
     ): MutableList<Pair<Int,Int>>{
         val newStones = mutableListOf<Pair<Int, Int>>()
+        stones.sortBy { -it.second }
         for (stone in stones) {
             var canMove = true
             var currentPlace = stone
@@ -113,6 +116,7 @@ fun main() {
         withoutRollingStones: MutableList<MutableList<Char>>,
     ): MutableList<Pair<Int,Int>> {
         val newStones = mutableListOf<Pair<Int, Int>>()
+        stones.sortBy { it.second }
         for (stone in stones) {
             var canMove = true
             var currentPlace = stone
@@ -140,26 +144,62 @@ fun main() {
         }
     }
 
+    fun print(
+        withoutRollingStones: MutableList<MutableList<Char>>,
+        newStones: MutableList<Pair<Int, Int>>
+    ) {
+        for (row in withoutRollingStones.indices) {
+            for (column in withoutRollingStones[row].indices) {
+                if (newStones.contains(Pair(row, column))) {
+                    print("O")
+                } else {
+                    print(withoutRollingStones[row][column])
+                }
+            }
+            println()
+        }
+    }
+
     fun part2(): Int {
         val stones = getStones(array)
         val withoutRollingStones = replaceRollingStones(array)
 
         var newStones = mutableListOf<Pair<Int,Int>>()
-        for (i in 1..1000000000){
-            println("running ${String.format(Locale.GERMANY, "%,d", i)}/1000000000")
+        val stoneList = mutableListOf<MutableList<Pair<Int,Int>>>()
+        var repeatIndex = mutableListOf<Int>()
+        var uniqueIndex = 0
+        // find when pattern will be repeating
+        // takes about 200 rounds
+        for (i in 1..1000000){
+            // println("running ${String.format(Locale.GERMANY, "%,d", i)}")
             newStones = if(newStones.isEmpty()){
                 moveToNorth(stones, withoutRollingStones)
             } else {
                 moveToNorth(newStones, withoutRollingStones)
             }
+
             newStones = moveToWest(newStones, withoutRollingStones)
             newStones = moveToSouth(newStones, withoutRollingStones)
             newStones = moveToEast(newStones, withoutRollingStones)
-        }
+            if(stoneList.any{it.toSet() == newStones.toSet()}){
+                stoneList.forEachIndexed { index, pairs -> if(pairs.toSet() == newStones.toSet()){
+                    repeatIndex.add(index)
+                } }
+                if(uniqueIndex == 0) {
+                    uniqueIndex = i - 1
+                }
+                if(repeatIndex.distinct().size < repeatIndex.size){
+                    break
+                }
 
-       return newStones.sumOf {
-            withoutRollingStones.size - it.first
+            } else {
+                stoneList.add(newStones)
+            }
         }
+        // how many is left from full circles since pattern started to repeat
+        val howManyLeft = (1000000000 - uniqueIndex) % (repeatIndex.max() - repeatIndex.min() + 1)
+        // count as many from min of repeating index up and remove 1 for index vs. count
+        return stoneList[howManyLeft + repeatIndex.min() - 1].sumOf { withoutRollingStones.size - it.first }
     }
 
     println(part1(array))

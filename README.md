@@ -39,3 +39,4 @@ Added advent of code 2023 to the same project
 11. Cosmic Expansion
 12. Hot Springs (part 2 with help)
 13. Point of Incidence
+14. Parabolic Reflector Dish
