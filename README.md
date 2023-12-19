@@ -40,3 +40,8 @@ Added advent of code 2023 to the same project
 12. Hot Springs (part 2 with help)
 13. Point of Incidence
 14. Parabolic Reflector Dish
+15. Lens Library
+16. The Floor Will Be Lava (part 1)
+17. ~~Clumsy Crucible (still working on my Dijkstra)~~ 
+18. Lavaduct Lagoon (Part 1)
+19. Aplenty (Part 1)
