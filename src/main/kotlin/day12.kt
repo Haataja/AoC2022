@@ -74,6 +74,15 @@ fun canTakeStep(current: Pair<Int, Int>, dir: Pair<Int, Int>, value: List<List<I
 }
 
 enum class Direction(val dx: Int, val dy: Int) {
-    LEFT(-1, 0), RIGHT(1, 0), UP(0, -1), DOWN(0, 1)
+    LEFT(-1, 0), RIGHT(1, 0), UP(0, -1), DOWN(0, 1);
+
+    fun opposite(): Direction {
+        return when(this){
+            UP -> DOWN
+            DOWN -> UP
+            LEFT -> RIGHT
+            RIGHT -> LEFT
+        }
+    }
 }
 

@@ -1,4 +1,4 @@
-fun print2D(rows: List<List<Char>>) {
+fun print2D(rows: List<List<Any>>) {
     println()
     for (row in rows.indices) {
         for (column in rows[row].indices) {

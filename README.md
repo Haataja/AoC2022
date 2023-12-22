@@ -42,6 +42,7 @@ Added advent of code 2023 to the same project
 14. Parabolic Reflector Dish
 15. Lens Library
 16. The Floor Will Be Lava (part 1)
-17. ~~Clumsy Crucible (still working on my Dijkstra)~~ 
+17. Clumsy Crucible (part 1 with slow dijkstra) 
 18. Lavaduct Lagoon (Part 1)
 19. Aplenty (Part 1)
+20. Pulse Propagation (part 1)
